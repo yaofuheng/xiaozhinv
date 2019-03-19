@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
+    <style>
+         .aaa{
+          margin:0 auto;
+          width:130px;
+          height:35px;
+          background:-webkit-linear-gradient(left,#66B2CA,#037CCF);
+          font-size:16px;
+          color:#fff;
+          border-radius:10px;
+          line-height:35px;
+          text-align:center;
+         }
+         .bbb{
+           position:fixed;
+           bottom:-100%;
+           left:0;
+           width:100%;
+           height:100%;
+           background:rgba(0,0,0,0.1);
+         }
+         .bbb button{
+            width:250px;
+            height:35px;
+            line-height:35px;  
+            text-align:center; 
+            position:absolute;
+            left:50%;
+            top:50%;
+            transform:translate(-50%,-50%);      
+          }
+          .ccc{
+            width:120px;
+            height:35px;
+            position:absolute;
+            bottom:10%;
+            background:#037CCF;
+            line-height:35px;
+            text-align:center;
+            color:#fff;
+            left:50%;
+            transform:translateY(-50%);
+            margin-left:-60px;
+          }
+    </style>
+</head>
+<body>
+   <div class="aaa">小侄女请点击我</div>
+   <div class="bbb">
+       <button type="">让你点你就点啊，你是不是个笨猪</button>
+       <div class="ccc">点我就关了吧</div>
+   </div>
+</body>
+</html>
+<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+<script>
+    $(function(){
+      $(".aaa").click(function(){
+           $(".bbb").animate({"bottom":"0px"});
+      })
+      $(".ccc").click(function(){
+          $(".bbb").animate({"bottom":"-100%"});
+      })
+    })
+</script>
+
+
+
+
+
+
